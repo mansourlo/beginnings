@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">e-link Survey form</h1>
+      <p id="description">Merci d'avoir pris le temps de nous aider à améliorer notre plateforme de liaison vendeur-acheteur.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input required id="name" type="text" placeholder="Enter your name"/>
+        <label for="email" id="email-label">Email:</label>
+        <input required id="email" type="email" placeholder="Enter your email"/>
+        <label for="number" id="number-label">Age:</label>
+        <input required id="number" type="number" min="9" max="99" placeholder="age"/>
+        <P>Vous utilisez <em>e-link</em> comme:</p> 
+        <select id="dropdown">
+          <option disabled selected>select an option</option>
+          <option>Vendeur</option>
+          <option>Acheteur</option>
+          <option>Vendeur&Acheteur</option>
+        </select>
+        <p>Est-ce que notre plateforme a ete utile?</p>
+        <input type="radio" id="radio1" value="radio" name="radio">
+        <label for"radio1">Oui, très utile</label>
+        <input type="radio" id="radio2" value="radio" name="radio">
+        <label for"radio1">Oui, un peu</label>
+        <input type="radio" id="radio3" value="radio" name="radio">
+        <label for"radio1">Non, pas vraiment</label>
+        <P>Les types de produit que vous achetez le plus?</P>
+        <input type="checkbox" id="electromenager" value="electromenager"/>
+        <label for="electromenager">appareils électroménagers</label>
+        <input type="checkbox" id="cosmetiques" value="cosmetiques"/>
+        <label for="cosmetiques">produits cosmétiques</label>
+        <input type="checkbox" checked id="vêtements" value="vêtements"/>
+        <label for="vêtements">vêtements</label>
+        <input type="checkbox" id="sport" value="sport"/>
+        <label for="sport">sport</label>
+        <p>Des commentaires ou suggestions ?</p>
+        <textarea id="commentaire" name="commentaire" cols="15" rows="4" placeholder="enter your comments here..."></textarea>
+        <button type="submit" id="submit">soummettre</button>
+      </form>
+    </main>
+  </body>
+</html>
